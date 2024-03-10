@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta draw</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="website icon " type="png" href="./assets/img/robo.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <img id="lado_cima" src="./assets/img/ladocima.png" alt="">
+    <img id="lado_baixo" src="./assets/img/ladobaixo.png" alt="">
+    <img id="robo" src="./assets/img/robo.png" alt="">
+    <main id="controle">  
+        <div id="divs">
+            <section id="navs">
+                <div><a href="./index.html"><img src="./assets/img/home.png" alt="Icone home"></a> <p class="mot_his">Home</p></div>
+                <div id="frases"><img src="./assets/img/motivação.png" alt=""> <p class="mot_his">Motivação</p></div>
+                <div><a href="./historico.html"><img src="./assets/img/histórco.png" alt=""></a> <p class="mot_his">Histórico</p></div>
+            </section>
+            <section id="informacoes">
+                <div id="titulo">
+                    <h1>Meta draw</h1>
+                    <h2>Controle suas metas de uma maneira divertida!</h2>
+                </div>
+                <div id="total">
+                    <section id="form">
+                    
+                        <form>
+                            <div class="item-form">
+                                <label for="nome">Qual será o nome da meta?</label>
+                                <input type="text" required id="nome" placeholder="Adicione o nome da meta">
+                            </div>
+                            <div class="item-form">
+                                <label for="Categoria">Escolha acategoria</label>
+                                <select id="categoria" >
+                                    <option value="">Categoria</option>
+                                    <option value="Hobby">Hobby</option>
+                                    <option value="Obrigatorias">Obrigatórias</option>
+                                    <option value="Estudo">Estudo</option>
+                                    <option value="Trabalho">Trabalho</option>
+                                </select>
+                            </div>
+                            <div class="item-form">
+                                <label for="data">Escolha a data</label>
+                                <input type="date" required id="data" >
+                            </div>
+                            <div class="item-form">
+                                <label for="Anotações">Anotações</label>
+                                <input type="text" id="Anotações" required>
+                            </div>
+                            <div>
+                                <button type="button" id="bnt">Enviar meta</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section id="checkk">
+                        <div id="pedidos">
+                            <div id="inicio">
+                                <p>Metas feitas por você</p>
+                            </div>
+                    
+                            <div id="conteudo"></div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="notify.min.js"></script>
+<script src="assets/js/js.js"></script>
+</html>

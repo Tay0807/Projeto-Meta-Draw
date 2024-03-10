@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style_hist.css">
+    <link rel="website icon " type="png" href="./assets/img/robo.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <title>Histórico</title>
+</head>
+<body>
+    <img id="lado_cima" src="./assets/img/ladocima.png" alt="Decoração azul com linhas">
+    <img id="lado_baixo" src="./assets/img/ladobaixo.png" alt="Decoração azul com linhas ">
+    <img id="robo" src="./assets/img/robo.png" alt="Robozinho flutuando  azul">
+
+    <main>
+        <section id="navs">
+            <div><a href="./index.html"><img src="./assets/img/home.png" alt="Icone home"></a> <p class="mot_his">Home</p></div>
+            <div id="frases"><img src="./assets/img/motivação.png" alt=""> <p class="mot_his">Motivação</p></div>
+            <div><a href="./historico.html"><img src="./assets/img/histórco.png" alt=""></a> <p class="mot_his">Histórico</p></div>
+        </section>   
+        <section id="section-historicos">
+            <section id="historicos">
+                <div class="pedidos">
+                    <div class="hist_lista">
+                        <div class="inicio">
+                            <p>Histórico Excluído</p>
+                        </div>
+                        <div class="lista_excluido" id="lista_excluido"> </div>
+                    </div>
+                </div>
+                <div class="pedidos">
+                    <div class="hist_lista">
+                        <div class="inicio">
+                            <p>Histórico Concluído</p>
+                        </div>
+                        <div class="lista_concluido" id="lista_concluido"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="btn">
+                <button id="bnt_historico" >Deletar tudo</button>
+            </section>
+        </section>
+    </main>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="notify.min.js"></script>
+<script src="assets/js/js.js" defer></script>
+</html>

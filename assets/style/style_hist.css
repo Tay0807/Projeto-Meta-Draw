@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Karla', sans-serif;
+    overflow: hidden;
+}
+
+
+:root {
+    --laranja--color: #B4C8EA;
+    --preta--color: black;
+
+}
+
+body{
+    background-color: #b4c8eaaa;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+}
+
+#navs{
+    background-color:#3d81f6b6 ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+#navs div{
+    padding: 10px;
+}
+
+#navs div:hover{
+    opacity: .4;
+    cursor: pointer;
+}
+
+.mot_his{
+    font-size: 20px;
+}
+
+
+#divs {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+}
+
+#lado_cima{
+    position: absolute;
+    top: -0px;
+    right: -0px;
+}
+
+#lado_baixo{
+    position: absolute;
+    bottom: -0px;
+}
+
+#nav_historico{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    border: 5px;
+}
+
+#nav_historico:hover{
+    padding: 7px;
+    text-decoration: underline;
+}
+
+#historicos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#hist_excluido, #hist_concluido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bnt_historico{
+    background-color:#709ff1b6 ;
+    color: white;
+    width:200px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.288) 3px 3px 3px 3px;
+    padding: 10px;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+#bnt_historico:hover{
+    cursor: pointer;
+    background-color:#3a7cf0b6;
+
+}
+
+#p_hist, summary{
+    font-size: 25px;
+    margin: 5px;
+}
+
+.span{
+    color: rgb(12, 37, 232);
+    font-weight: bolder;
+}
+
+#section-historicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#robo{
+    position: absolute;
+    right: 19px;
+    bottom: 1px;
+    animation: go-back 1s alternate-reverse infinite;
+}
+
+
+@keyframes go-back {
+    from {
+        bottom: 1px;
+    }
+    to {
+        bottom: 15px;
+    }
+  }
+
+.inicio {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: #709ff1b6 ;
+    padding: 5px;
+    font-size: 27px;
+}
+
+.pedidos{
+    width: 500px;
+    height: 350px;
+    background-color: var(--laranja--color);
+    padding: 0px 0px 60px 0px;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.205) 1px 1px 1px 1px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
